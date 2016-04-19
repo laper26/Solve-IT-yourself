@@ -41,7 +41,7 @@
                                 <li><a href="overview.php">Project-overview</a></li>
                             </ul>
                         </li>
-                        <li><a href="location.php">Find us</a></li>
+                        <li><a href="http://www.eckener-schule.de/">Find us</a></li>
                         <li><a href="contact.php"><span class="glyphicon glyphicon-envelope"></span>  Contact us</a></li>
                         <li><a href="policies-and-legislation.php">Policies and legislation</a></li>
                     </ul>
