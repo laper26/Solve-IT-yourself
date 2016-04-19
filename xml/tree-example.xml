@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- example from https://github.com/hungrymedia/interactive-decision-tree, MIT-License: http://wph.mit-license.org/ -->
+<tree>
+    <title>Test Tree</title>
+    <description>A simple test decision tree involving cuisine choices.</description>
+    <branch id="1">
+        <content>Do you eat meat?</content>
+        <fork target="1.1">Yes</fork>
+        <fork target="1.2">No</fork>
+    </branch>
+    <branch id="1.1">
+        <content>Do you like red meat?</content>
+        <fork target="1.1.1">Affirmative</fork>
+        <fork target="1.1.2">Negative</fork>
+    </branch>
+    <branch id="1.2">
+        <content>Do you like faux-meat?</content>
+        <fork target="1.2.1">Yes</fork>
+        <fork target="1.2.2">No</fork>
+        <fork target="1.2.3">What is that?</fork>
+    </branch>
+    <branch id="1.1.1">
+        <content>How about a burger?</content>
+        <fork target="1.1.1.1">Yes</fork>
+        <fork target="1.1.1.2">No</fork>
+    </branch>
+    <branch id="1.1.2">
+        <content>How about some fish?</content>
+        <fork target="1.1.2.1">Google it</fork>
+        <fork target="1.1.2.2">Some Answer</fork>
+    </branch>
+    <branch id="1.2.1">
+        <content>How about a veggie burger?</content>
+    </branch>
+    <branch id="1.2.2">
+        <content>How about a salad?</content>
+        <fork target="1.2.2.1">Yes</fork>
+        <fork target="1.2.2.2">No</fork>
+    </branch>
+    <branch id="1.1.1.1">
+        <content>Enjoy</content>
+    </branch>
+    <branch id="1.1.1.2">
+        <content>Eat a steak then.</content>
+    </branch>
+    <branch id="1.2.2.1">
+        <content>Enjoy</content>
+    </branch>
+    <branch id="1.2.2.2">
+        <content>There's no pleasing you!</content>
+    </branch>
+    <branch id="1.2.3">
+        <content>Perhaps &lt;a href="http://en.wikipedia.org/wiki/Tofu"&gt;Tofu&lt;/a&gt;</content>
+    </branch>
+    <branch id="1.1.2.1">
+        <content>https://google.com</content>
+    </branch>
+    <branch id="1.1.2.2">
+        <content>Link to a solution</content>
+    </branch>
+</tree>
