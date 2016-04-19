@@ -1,10 +1,13 @@
+<?php
+require_once("includes.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>This is the title...</title>
+    <title>Solve-IT Yourself!</title>
     <meta name="description" content="Here is a short description for the page. This text is displayed e. g. in search engine result listings.">
     <link href="./css/bootstrap.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -14,7 +17,6 @@
 </head>
 <body>
     <header class="container">
-        <p>The header is usually the place for a logo or a picture, a navigation bar or a search field.</p>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
