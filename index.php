@@ -25,7 +25,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php">Solve IT yourself!</a>
+                    <a class="navbar-brand" href="index.php">Solve IT yourself!</a> 
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
