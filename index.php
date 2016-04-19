@@ -50,6 +50,9 @@
         </nav>
     </header>
     <section class="container bg-color01">
+        <?php
+        require_once("includes.php");
+        ?>
         <h1>Hi, developers!</h1>
         <p>Here comes the content..</p>
         <p class="jumbotron">Fascinating - another design for this paragraph with Bootstrap! <span class="glyphicon glyphicon-thumbs-up"></span></p>
