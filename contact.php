@@ -1,9 +1,12 @@
+<?php
+require_once("includes.php");
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>This is the title...</title>
+    <title>Contact Us</title>
     <meta name="description" content="Here is a short description for the page. This text is displayed e. g. in search engine result listings.">
     <link href="./css/bootstrap.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -13,7 +16,6 @@
 </head>
 <body>
 <header class="container">
-    <p>The header is usually the place for a logo or a picture, a navigation bar or a search field.</p>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,7 +52,7 @@
 </header>
 <section class="container bg-color01">
     <h1>Contact Us</h1>
-    <p>You can contact us, using the following E-Mail Adresse. We will be sure to get back to you within 5 minutes. </p>
+    <p>You can contact us, using the following E-Mail address. We will be sure to get back to you within 5 minutes. </p>
     <p>E-Mail: <a href="larsp.26@web.de">larsp.26@web.de</a></p>
 
 </section>
