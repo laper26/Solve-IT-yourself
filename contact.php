@@ -1,6 +1,3 @@
-<?php
-require_once("includes.php");
-?>
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
@@ -51,6 +48,9 @@ require_once("includes.php");
     </nav>
 </header>
 <section class="container bg-color01">
+    <?php
+    require_once("includes.php");
+    ?>
     <h1>Contact Us</h1>
     <p>You can contact us, using the following E-Mail address. We will be sure to get back to you within 5 minutes. </p>
     <p>E-Mail: <a href="larsp.26@web.de">larsp.26@web.de</a></p>
