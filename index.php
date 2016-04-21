@@ -41,7 +41,22 @@
                                 <li><a href="overview.php">Project-overview</a></li>
                             </ul>
                         </li>
-                        <li><a href="http://www.eckener-schule.de/">Find us</a></li>
+						
+						
+						<li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="dropdown">
+								
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find us <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.eckener-schule.de/">Eckner Schule</a></li>
+								<li><a href="https://www.google.de/maps/place/Friesische+L%C3%BCcke+15,+24937+Flensburg/@54.7772748,9.3991122,13z/data=!4m2!3m1!1s0x47b342a623d6768f:0x9b6e6e1cd9f17bce">Position Eckner Schule</a></li>
+								<li><a href="http://www.szkolnictwo.pl/szko%C5%82a,zawodowa,Milan%C3%B3wek,PB5021,Zesp%C3%B3%C5%82+Szk%C3%B3%C5%82+nr+2">Zespół Szkół Nr 2 w Milanówku</a></li>
+								<li><a href="https://www.google.de/maps/place/Liceum+Og%C3%B3lnokszta%C5%82c%C4%85ce+Zespo%C5%82u+Szk%C3%B3%C5%82+nr+2+im.+gen.+J.+Bema/@52.1285751,20.672628,17z/data=!3m1!4b1!4m2!3m1!1s0x471949041a4d6c71:0xfbcc233c17b47bf9">Position Zespół Szkół Nr 2 w Milanówku</a></li>
+							</ul>
+						</li>	
+						
+								
+						
                         <li><a href="contact.php"><span class="glyphicon glyphicon-envelope"></span>  Contact us</a></li>
                         <li><a href="policies-and-legislation.php">Policies and legislation</a></li>
                     </ul>
