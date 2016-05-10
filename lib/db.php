@@ -54,6 +54,7 @@ class db
         {
             echo 'Can\'t open database.';
         }
+        $this->dbh->set_charset('utf8');
 
         return $this->dbh;
     }
@@ -69,7 +70,6 @@ class db
             $this->connect();
         }
         // use uft-8 characterset for the queries
-        $this->dbh->query("SET NAMES 'utf8'");
         $result = $this->dbh->query($querystring);
         return $result;
     }
