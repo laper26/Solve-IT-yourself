@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 26. Apr 2016 um 09:51
+-- Erstellungszeit: 26. Apr 2016 um 10:09
 -- Server-Version: 10.1.10-MariaDB
 -- PHP-Version: 7.0.4
 
@@ -19,7 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `soy`
 --
-
+CREATE DATABASE IF NOT EXISTS 'soy' DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE 'soy';
 -- --------------------------------------------------------
 
 --
