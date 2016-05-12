@@ -3,10 +3,10 @@
 require 'includes.php';
 
 $pageDataArray = [
-    'header' => parseTemplate('templates/header.html', []),
-    'footer' => parseTemplate('templates/footer.html', []),
+    'header' => file_get_contents('templates/header.html'),
+    'footer' => file_get_contents('templates/footer.html'),
     'title' => 'Polish VET',
-    'main' => parseTemplate('templates/dropdown/polish-vet/index.html', []),
+    'main' => file_get_contents('templates/dropdown/polish-vet/index.html'),
 ];
 
 $content = parseTemplate('templates/base.html', $pageDataArray);

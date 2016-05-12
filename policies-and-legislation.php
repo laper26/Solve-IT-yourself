@@ -3,10 +3,10 @@
 require 'includes.php';
 
 $pageDataArray = [
-    'header' => parseTemplate('templates/header.html', []),
-    'footer' => parseTemplate('templates/footer.html', []),
+    'header' => file_get_contents('templates/header.html'),
+    'footer' => file_get_contents('templates/footer.html'),
     'title' => 'Policies and Legislation',
-    'main' => parseTemplate('templates/policies-and-legislation/index.html', []),
+    'main' => file_get_contents('templates/policies-and-legislation/index.html'),
 ];
 
 $content = parseTemplate('templates/base.html', $pageDataArray);
