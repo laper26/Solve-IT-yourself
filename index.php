@@ -6,8 +6,6 @@ require 'includes.php';
  * We create an assoc pageDataArray to store the locations of the templates that we feed into the template engine.
  */
 $pageDataArray = [
-    'header' => file_get_contents('templates/header.html'),
-    'footer' => file_get_contents('templates/footer.html'),
     'title' => 'Start',
     'main' => file_get_contents('templates/index/index.html'),
 ];
