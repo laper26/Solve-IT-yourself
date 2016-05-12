@@ -4,58 +4,64 @@
     <title>Test Tree</title>
     <description>A simple test decision tree involving cuisine choices.</description>
     <branch id="1">
-        <content>Do you eat meat?</content>
-        <fork target="1.1">Yes</fork>
-        <fork target="1.2">No</fork>
+        <content>IP-stack troubleshoot - ping IP-stack -> open command prompt(Windows), write 'ping 127.0.0.1'</content>
+        <fork target="1.1">successful</fork>
+        <fork target="1.2">failed</fork>
     </branch>
     <branch id="1.1">
-        <content>Do you like red meat?</content>
-        <fork target="1.1.1">Affirmative</fork>
-        <fork target="1.1.2">Negative</fork>
+        <content>Check NIC of host - ping host(yourself) -> open command prompt(Windows), for example write 'ping 192.168.2.2'</content>
+        <fork target="1.1.1">successful</fork>
+        <fork target="1.1.2">failed</fork>
+        <fork target="1.1.3">Where can I find my IP-Adress?</fork>
     </branch>
     <branch id="1.2">
-        <content>Do you like faux-meat?</content>
-        <fork target="1.2.1">Yes</fork>
-        <fork target="1.2.2">No</fork>
-        <fork target="1.2.3">What is that?</fork>
+        <content>Reset your internetprotocol TCP/IPv4 to default -> open command prompt, write 'netsh int ip reset'</content>
+        <fork target="1.1.1">successful</fork>
+        <fork target="1.2.2">failed</fork>
     </branch>
     <branch id="1.1.1">
-        <content>How about a burger?</content>
-        <fork target="1.1.1.1">Yes</fork>
-        <fork target="1.1.1.2">No</fork>
+        <content>Troubleshooting network & gateway - ping gateway -> open command prompt(Windows), for example write 'ping 192.168.2.1'</content>
+        <fork target="1.1.1.1">successful</fork>
+        <fork target="1.1.1.2">failed</fork>
+        <fork target="1.1.1.3">Where can I find the gateway´s IP-adress?</fork>
     </branch>
     <branch id="1.1.2">
-        <content>How about some fish?</content>
-        <fork target="1.1.2.1">Google it</fork>
-        <fork target="1.1.2.2">Some Answer</fork>
-    </branch>
-    <branch id="1.2.1">
-        <content>How about a veggie burger?</content>
+        <content>Maybe the DHCP-Server could not/or did not give you an IP-adress -> open command prompt(Windows), write 'ipconfig /release', then 'ipconfig /renew'</content>
+        <fork target="1.1.1">successful</fork>
+        <fork target="1.1.2.2">failed</fork>
     </branch>
     <branch id="1.2.2">
-        <content>How about a salad?</content>
-        <fork target="1.2.2.1">Yes</fork>
-        <fork target="1.2.2.2">No</fork>
+        <content>Maybe no driver is installed. Check driver in your device-management. Expand content, which is under 'network adapter'.</content>
+        <fork target="1.2.2.1">Network adapter is marked yellow.</fork>
+        <fork target="1.2.2.2">Can´t find my network adapter.</fork>
+        <fork target="1.2.2.3">It´s all fine.</fork>
     </branch>
     <branch id="1.1.1.1">
-        <content>Enjoy</content>
+        <content>Troubleshooting network - ping remote host -> open command prompt(Windows), for example write 'ping 192.168.2.3'</content>
+        <fork target="1.1.1.1.1">successful</fork>
+        <fork target="1.1.1.1.2">failed</fork> !!!!!!!!!
     </branch>
-    <branch id="1.1.1.2">
-        <content>Eat a steak then.</content>
+    <branch id="1.1.1.1.1">
+        <content>Troubleshooting the internet adress - ping a public server -> open command prompt(Windows), for example write 'ping 8.8.8.8' (That´s google´s DNS)</content>
+        <fork target="1.1.1.1.1.1">successful</fork>
+        <fork target="1.1.1.1.1.1">failed</fork>
     </branch>
-    <branch id="1.2.2.1">
-        <content>Enjoy</content>
+    <branch id="1.1.1.1.1.1">
+        <content>Troubleshooting the internet adress - ping a public server -> open command prompt(Windows), for example write 'ping google.de' (That´s google :))</content>
+        <fork target="1.1.1.1.1.1.1">successful</fork>
+        <fork target="1.1.1.1.1.1.2">failed</fork>
     </branch>
-    <branch id="1.2.2.2">
-        <content>There's no pleasing you!</content>
+    <branch id="1.1.1.1.1.1.2">
+        <content>Is target Server available? Check with other devices.</content>
+        <fork target="1.1.1.1.1.1.2.1">It´s available. What now?</fork>
+        <fork target="1.1.1.1.1.1.2.2">It´s not available...</fork>
     </branch>
-    <branch id="1.2.3">
-        <content>Perhaps &lt;a href="http://en.wikipedia.org/wiki/Tofu"&gt;Tofu&lt;/a&gt;</content>
+    <branch id="1.1.1.1.1.1.2.1">
+        <content>Is there any proxy Servers activated? Deactivate them (Maybe some extensions installed in your Browser? Some proxies written down in properties of your network adapter?)</content>
+        <fork target="1.1.1.1.1.1.1">Oh, yeah, actually you are right...</fork>
+        <fork target="1.1.1.1.1.1.2.2">Looked into it, found nothing.</fork>
     </branch>
-    <branch id="1.1.2.1">
-        <content>https://google.com</content>
-    </branch>
-    <branch id="1.1.2.2">
-        <content>Link to a solution</content>
+    <branch id="1.1.1.1.1.1.1">
+        <content>Problem solved! Have fun surfing the internet!</content>
     </branch>
 </tree>
