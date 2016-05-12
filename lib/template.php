@@ -1,10 +1,11 @@
 <?php
 /** parseTemplate
- * Liest eine HTML-Vorlage und ersetzt die Platzhalter (in diesem Fall [[*NAME]])
- * mit den dazugehörigen Werten aus dem Array.
- * @param string $templateFilename Name der zu lesenden Vorlagendatei
- * @param assoc-arrac $pageDataArray Assoziatives Array der zu ersetzenden Werte
- * @return string Die Zeichenkette, die mit echo ausgegeben werden kann
+ * Reads the HTML-Template and exchanges the placeholders (in this case [[*NAME]])
+ * with the associated values from the array.
+ *
+ * @param string $templateFilename Name of the Templatefile that will be read
+ * @param assoc-array $pageDataArray Associative array which holds the values that will be replaced
+ * @return string The string, which will be returned. It can be echoed out.
  */
 function parseTemplate($templateFilename, $pageDataArray)
 {
@@ -13,7 +14,7 @@ function parseTemplate($templateFilename, $pageDataArray)
     {
         if (empty($value))
         {
-//            $value = 'Für die Variable $pageDataArray[\'' . $placeholder . '\'] wurde kein Wert angegeben...';
+            $value = 'No value was given for the variable $pageDataArray [\'' . $placeholder . '\']';
         }
         $output = str_replace('[[*' . $placeholder . ']]', $value, $output);
     }
